@@ -14,7 +14,7 @@ This app was bootstrapped using the create-react-app and uses the following tech
 - React JS
 - JSX
 - CSS3
-- Emotion styles
+- Emotion Styled Components
 
 ### Installation
 
