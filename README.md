@@ -5,7 +5,7 @@ Developed with fully responsive design in order to look good in all devices.
 
 ## Live Demo
 
-[Link](https://breakingbadquotes-reactjs.netlify.app/)
+[Link](https://breakingbadquotesgenerator.netlify.app/)
 
 ### Technologies Used
 
