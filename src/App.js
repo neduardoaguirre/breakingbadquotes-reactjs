@@ -48,17 +48,17 @@ const Button = styled.button`
 `;
 
 function App() {
-  const [quote, saveQuote] = useState({});
-  const [loading, saveLoading] = useState(true);
+  const [quote, setQuote] = useState({});
+  const [loading, setLoading] = useState(true);
 
   const getQuote = async () => {
-    saveLoading(true);
+    setLoading(true);
     const url = 'https://breaking-bad-quotes.herokuapp.com/v1/quotes';
     try {
       const req = await fetch(url);
       const res = await req.json();
-      saveQuote(res[0]);
-      saveLoading(false);
+      setQuote(res[0]);
+      setLoading(false);
     } catch (error) {
       console.log(error);
     }
@@ -74,8 +74,6 @@ function App() {
         <img src={logo} alt="Breaking Bad Logo" />
       </Logo>
       {loading ? <Spinner /> : <Quote quote={quote} />}
-
-      {/* <Quote quote={quote} /> */}
       <Button onClick={getQuote}>Get Quotes</Button>
     </Container>
   );
